@@ -1,0 +1,229 @@
+.custom-dialog-container {
+    margin: 30px !important; /* Custom margin */
+    padding: 20px !important; /* Custom padding */
+    box-sizing: border-box;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-color: #f4f4f4;
+    padding: 1rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+  .header .new-button {
+    font-size: 1rem;
+    color: #2196f3;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .header .new-button::before {
+    content: "+";
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: #eaeaea;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+
+  .search-container input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  .filter-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .filter-button {
+    font-size: 0.9rem;
+    color: #666;
+    background-color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+  }
+
+  .filter-button.active {
+    color: #2196f3;
+  }
+
+  .disease-section {
+    margin-bottom: 1rem;
+  }
+
+  .disease-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+
+  .disease-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .disease-count {
+    background-color: #e0e0e0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .regimen-list {
+    display: none; /* Hide by default */
+    padding: 0.5rem 0;
+  }
+
+  .regimen-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .regimen-item .details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .regimen-item .name {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .regimen-item .metadata {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .metadata .custom, .metadata .pre-med, .metadata .trial {
+    background-color: #e0e0e0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+
+  .metadata .pre-med {
+    background-color: #ffd966;
+    color: #666;
+  }
+
+  .metadata .trial {
+    background-color: #cfe2f3;
+    color: #2196f3;
+  }
+
+  .regimen-item .owner {
+    font-size: 0.8rem;
+    color: #666;
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    color: #666;
+  }
+
+  .action-buttons .icon {
+    cursor: pointer;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .regimen-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+
+
+  .example-accordion {
+    display: block;
+    max-width: 1200px;
+  }
+  
+  .example-accordion-item {
+    display: block;
+    border: solid 1px #ccc;
+  }
+  
+  .example-accordion-item + .example-accordion-item {
+    border-top: none;
+  }
+  
+  .example-accordion-item-header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+  
+  .example-accordion-item-description {
+    font-size: 0.85em;
+    color: black;
+  }
+  
+  .example-accordion-item-header,
+  .example-accordion-item-body {
+    padding: 16px;
+  }
+  
+  .example-accordion-item-header:hover {
+    cursor: pointer;
+    background-color: #eee;
+  }
+  
+  .example-accordion-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  .example-accordion-item:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  

@@ -1,0 +1,48 @@
+<table cdk-table [dataSource]="dataSource">
+    <!-- Regimen Column -->
+    <ng-container cdkColumnDef="Regimen">
+      <th cdk-header-cell *cdkHeaderCellDef> Regimen </th>
+      <td cdk-cell *cdkCellDef="let element">
+        <div class="regimen-cell">
+        
+          <span class="regimen-text">{{ element.Regimen }}</span>
+        </div>
+      </td>
+    </ng-container>
+  
+    <!-- Owner Column -->
+    <ng-container cdkColumnDef="Owner">
+      <th cdk-header-cell *cdkHeaderCellDef> Owner </th>
+      <td cdk-cell *cdkCellDef="let element">
+        <div class="owner-cell">
+          <span>{{ element.Owner }}</span>
+          <img class="owner-status" src="Assets/tick.png"  />
+        </div>
+      </td>
+    </ng-container>
+  
+    <!-- Action Column -->
+    <ng-container cdkColumnDef="Action">
+      <th cdk-header-cell *cdkHeaderCellDef> Action </th>
+      <td cdk-cell *cdkCellDef="let element">
+        <div class="action-cell">
+          <button mat-button class="action-button">
+            <img src="Assets/mark.png"  />
+          </button>
+          <button mat-button class="action-button">
+            <img src="Assets/Copy.png"  />
+          </button>
+          <button mat-button class="action-button">
+            <img src="Assets/delete.png"  />
+          </button>
+        </div>
+      </td>
+    </ng-container>
+  
+    <!-- Header Row -->
+    <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+  
+    <!-- Data Rows -->
+    <tr cdk-row *cdkRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  

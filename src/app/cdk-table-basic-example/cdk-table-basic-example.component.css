@@ -1,0 +1,71 @@
+/* General Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Regimen Column Styles */
+  .regimen-cell {
+    display: flex;
+    align-items: center;
+  }
+  
+  .regimen-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .regimen-text {
+    flex-grow: 1;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Owner Column Styles */
+  .owner-cell {
+    display: flex;
+    align-items: center;
+  }
+  
+  .owner-status {
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Action Column Styles */
+  .action-cell {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  .action-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .action-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
