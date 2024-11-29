@@ -30,6 +30,7 @@ export class RegimenLibraryComponent implements OnInit{
   ngOnInit() {
     this.OnLoadRegimens();
   }
+  
 
   OnLoadRegimens(): void {
     this.regimenService.GetAllRegimens().subscribe(
